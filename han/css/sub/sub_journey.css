@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+#journey {background: url(../../img/sub/sub_bg.jpg) no-repeat center / cover; padding: 150px 0 50px; position: relative; overflow: hidden;}
+#journey .inner {padding: 0 12%;}
+#journey .journey_effect1 {position: absolute; left: -100px; top: -50px; animation: effect1 1s linear 0s infinite alternate; width: 50vh; height: 40vh; background: radial-gradient(circle at 100% 100%, #FDFCFB, #7BFFB7); opacity: 0.6; border-radius: 50%; filter: blur(50px); overflow-y: hidden;}
+@keyframes effect1 {
+    0% {top: -50px;}
+	100% {top: 2%;}
+}
+#journey .journey_effect2 {position: absolute; right: -100px; bottom: 5%; animation: effect2 1s linear 0s infinite alternate; width: 50vh; height: 40vh; background: radial-gradient(circle at 100% 100%, #7BFFB7,#FDFCFB); opacity: 0.6; border-radius: 50%; filter: blur(50px); overflow: hidden;}
+
+@keyframes effect2 {
+    0% {bottom: -50px;}
+	100% {bottom: 3%;}
+}
+
+#journey .journey_bg1 {position: absolute; right: 12%; top: 41%;}
+#journey .journey_bg1 img {width: 100%;}
+#journey .journey_bg2 {position: absolute; left: 14.2%; top: 73%;}
+#journey .journey_bg2 img {width: 100%;}
+
+#journey .journey_tit {z-index: 100;}
+#journey .journey_tit h2 {font-size: 6.4rem; font-family: var(--main-font); font-weight: 400; line-height: 1.4;}
+#journey .journey_tit p {font-size: 2.4rem; padding: 10px 0 100px;}
+#journey .journey_txt dl {border: 1px solid #000; position: relative; z-index: 10; width: 100%;}
+#journey .journey_txt dl::before {content: ""; width: 100%; height: 100%; border: 1px solid #000; position: absolute; left: 1%; top: 10%; z-index: -1; border-top: 0;}
+
+#journey .journey_txt dl:nth-child(1) {margin-bottom: 200px;}
+
+#journey .journey_txt dl dt {background: #83EBB8; font-size: 3.5rem; font-weight: 500; border-bottom: 1px solid #000; padding: 20px 30px;}
+#journey .journey_txt dl dd {font-size: 2.4rem; padding: 20px 80px 60px 30px; background: #fff; line-height: 1.7;}
+
+#journey .btn_more {text-align: center; padding: 120px 0 100px;}
+#journey .btn_more a {font-family: var(--sub-font); font-size: 1.8rem; border: 1px solid #000; padding: 15px 45px; transition: all 0.6s; display: inline-block;}
+#journey .btn_more a:hover {background: #83EBB8;}
+
+@media (max-width:1200px) {
+    #journey .inner {padding: 0 10%;}
+    #journey .journey_effect1 {width: 40vh; height: 30vh;}
+    #journey .journey_effect2 {width: 40vh; height: 30vh;}
+    #journey .journey_tit h2 {font-size: 5.4rem;}
+    #journey .journey_tit p {font-size: 2.2rem;}
+    #journey .journey_txt dl dt {font-size: 3rem; padding: 20px 0 20px 20px;}
+    #journey .journey_txt dl dd {font-size: 2.2rem; line-height: 1.7; padding: 20px 80px 60px 20px;}
+    #journey .journey_txt dl::before {top: 7%;}
+    #journey .btn_more {text-align: center; padding: 120px 0 70px;}
+    #journey .journey_txt br{display: inline-block; content: " "; padding: 0 0px;}
+}
+@media (max-width:768px) {
+    #journey .inner {padding: 0 8%;}
+    #journey .journey_effect1 {width: 30vh; height: 20vh;}
+    #journey .journey_effect2 {width: 30vh; height: 20vh;}
+    #journey .journey_tit h2 {font-size: 4.5rem;}
+    #journey .journey_tit p {font-size: 2rem; padding-bottom: 80px;}
+    #journey .journey_txt dl:nth-child(1) {margin-bottom: 150px;}
+    #journey .journey_txt dl dt {font-size: 3rem; padding: 20px 0 20px 20px;}
+    #journey .journey_txt dl dd {font-size: 2.2rem; line-height: 1.7; padding: 20px 80px 60px 20px;}
+    #journey .journey_txt dl::before {left: 1.5%; top: 5%;}
+    #journey .btn_more {text-align: center; padding: 150px 0 50px;}
+}
+@media (max-width:500px) {
+    #journey {padding: 100px 0 50px;}
+    #journey .inner {padding: 0 5%;}
+    #journey .journey_bg1 {right: 0; top: 43%;}
+    #journey .journey_bg2 {left: 0; top: 80%;}
+    #journey .journey_bg1 img {width: 50%; float: right;}
+    #journey .journey_bg2 img {width: 50%;}
+    #journey .journey_effect1 {width: 30vh; height: 20vh;}
+    #journey .journey_effect2 {width: 30vh; height: 20vh;}
+    #journey .journey_tit h2 {font-size: 3.5rem; text-underline-offset: 10px;}
+    #journey .journey_tit p {font-size: 1.6rem; padding-bottom: 60px;}
+    #journey .journey_txt dl:nth-child(1) {margin-bottom: 100px;}
+    #journey .journey_txt dl dt {font-size: 2rem; padding: 15px 0 15px 10px;}
+    #journey .journey_txt dl dd {font-size: 1.6rem; line-height: 1.7; padding: 15px 10px;}
+    #journey .journey_txt dl::before {left: 1.5%; top: 5%;}
+    #journey .btn_more {text-align: center; padding: 100px 0 50px;}
+}
