@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+#sub_cocktail {background: var(--main-color);}
+#sub_cocktail .cocktail_visual video {width: 100%; object-fit: cover; display: block;}
+#sub_cocktail .inner {padding: 100px 0;}
+#sub_cocktail .inner h2 {font-size: 6rem; text-align: center; color: var(--sub-color); font-weight: 400; font-family: var(--sub-font);}
+#sub_cocktail .inner p {color: #fff; text-align: center; padding: 30px 0 100px;}
+#sub_cocktail .cocktail_list_tit {display: flex; gap: 200px; align-items: center; padding: 0 10%; overflow: hidden;}
+#sub_cocktail .cocktail_list_tit_img img {width: 100%; display: block;}
+#sub_cocktail .cocktail_list_tit_img {width: calc((100% - 200px) / 2);}
+#sub_cocktail .cocktail_list_tit_txt {color: #fff; width: calc((100% - 200px) / 2);}
+#sub_cocktail .cocktail_list_tit_txt h4 {font-size: 3rem; color: var(--sub-color); position: relative;}
+#sub_cocktail .cocktail_list_tit_txt h4::before {content: ""; width: 400px; height: 1px; background: var(--sub-color); position: absolute; left: 0; bottom: 0;}
+#sub_cocktail .cocktail_list_tit_txt ul {list-style:disc; padding-top: 20px;}
+#sub_cocktail .cocktail_list_tit_txt ul li {padding: 5px 0;}
+#sub_cocktail .cocktail_list_txt { padding: 150px 20%;}
+#sub_cocktail .cocktail_list_txt h4 {font-size: 3rem; color: var(--sub-color); padding: 50px 0; text-align: center;}
+#sub_cocktail .cocktail_list_txt dl {display: flex; gap: 50px; align-items: center; padding: 20px 0;}
+#sub_cocktail .cocktail_list_txt dl dt {font-size: 5rem; color: var(--sub-color); text-align: center; width: 50px; border-bottom: 1px solid var(--sub-color);}
+#sub_cocktail .cocktail_list_txt dl dd {font-size: 2rem; color: #fff; display: block; width: calc(100% - 50px);}
+#sub_cocktail .sub_cocktail h4 {font-size: 4rem; font-weight: 500; color: var(--sub-color); font-family: var(--sub-font);}
+#sub_cocktail .sub_cocktail ul li img {width: 100%;} 
+
+@media (max-width:1200px) {
+    #sub_cocktail .cocktail_list_txt {padding: 150px 0;}
+    #sub_cocktail .cocktail_list_txt dl dt {font-size: 4rem; width: 50px; height: 50px;}
+    #sub_cocktail .cocktail_list_txt dl dd {font-size: 1.8rem;}
+    #sub_cocktail .sub_cocktail h4 {font-size: 3rem;}
+}
+@media (max-width:768px) {
+    #sub_cocktail .inner {padding: 60px 0;}
+    #sub_cocktail .inner h2 {font-size: 3rem;}
+    #sub_cocktail .inner p {font-size: 1.4rem;}
+    #sub_cocktail .cocktail_list_tit {gap: 100px;}
+    #sub_cocktail .cocktail_list_tit_img {width: calc((100% - 100px) / 2);}
+    #sub_cocktail .cocktail_list_tit_txt {width: calc((100% - 100px) / 2);}
+    #sub_cocktail .cocktail_list_tit_txt h4 {font-size: 1.8rem;}
+    #sub_cocktail .cocktail_list_tit_txt h4::before {width: 300px;}
+    #sub_cocktail .cocktail_list_tit_txt ul li {font-size: 1.4rem;}
+    #sub_cocktail .cocktail_list_txt {padding: 80px 0;}
+    #sub_cocktail .cocktail_list_txt h4 {font-size: 2.5rem; padding: 30px 0;}
+    #sub_cocktail .cocktail_list_txt dl {gap: 20px; padding: 15px 0;}
+    #sub_cocktail .cocktail_list_txt dl dt {font-size: 2rem; width: 30px; height: 30px; line-height: 1.4;}
+    #sub_cocktail .cocktail_list_txt dl dd {font-size: 1.4rem;}
+    #sub_cocktail .sub_cocktail h4 {font-size: 2rem;} 
+}
+@media (max-width:500px) {
+    #sub_cocktail .inner {padding: 50px 3%;}
+    #sub_cocktail .inner h2 {font-size: 3rem;}
+    #sub_cocktail .inner p {font-size: 1.4rem;}
+    #sub_cocktail .cocktail_list_tit {gap: 50px; padding: 50px 0;}
+    #sub_cocktail .cocktail_list_tit_img {width: calc((100% - 50px) / 2);}
+    #sub_cocktail .cocktail_list_tit_txt {width: calc((100% - 50px) / 2);}
+    #sub_cocktail .cocktail_list_tit_txt h4 {font-size: 1.6rem;}
+    #sub_cocktail .cocktail_list_tit_txt h4::before {width: 150px;}
+    #sub_cocktail .cocktail_list_tit_txt ul li {font-size: 1.2rem;}
+    #sub_cocktail .cocktail_list_txt {padding: 50px 0;}
+    #sub_cocktail .cocktail_list_txt h4 {font-size: 2rem; padding: 30px 0;}
+    #sub_cocktail .cocktail_list_txt dl {gap: 10px; padding: 15px 0;}
+    #sub_cocktail .cocktail_list_txt dl dt {font-size: 2rem; width: 30px; height: 30px; line-height: 1.4;}
+    #sub_cocktail .cocktail_list_txt dl dd {font-size: 1.2rem; width: calc(100% - 30px);}
+    #sub_cocktail .sub_cocktail h4 {font-size: 2rem;} 
+}
