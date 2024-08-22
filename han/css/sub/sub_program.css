@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+#program {background: url(../../img/sub/sub_bg.jpg) no-repeat center / cover; padding: 150px 0 50px; position: relative; overflow: hidden;}
+#program .program_tit img {display: block; padding-bottom: 5px;}
+#program .program_tit h2 {font-size: 6.4rem; font-family: var(--main-font); font-weight: 400;}
+#program .program_tit p {font-size: 2.4rem; padding: 5px 0 120px 0;}
+
+#program .program_list .program_tab {display: flex; gap: 60px; text-align: center; position: relative; padding-bottom: 50px;}
+#program .program_list .program_tab::before {content: ""; width: 487px; height: 1px; background: #000; position: absolute; left: 2%; top: 5px;}
+
+#program .program_list .program_tab li {position: relative; padding: 30px 0; cursor: pointer; font-size: 2rem; font-family: var(--main-font); transition: all 0.6s;}
+#program .program_list .program_tab li:nth-child(even) {color: #333;}
+#program .program_list .program_tab li::before {content: ""; width: 10px; height: 10px; border: 1px solid #000; background: #fff; border-radius: 50%; position: absolute; left: 50%; top: 0; transform: translate(-50%,0);}
+#program .program_list .program_tab li.on::before {background: #B080FD; transition: all 0.6s;}
+#program .program_list .program_con {position: relative;}
+#program .program_list .program_con::before {content: ""; width: 100%; height: 100%; border: 1px solid #000; position: absolute; left: 1%; top: 3%; border-top: 0; border-left: 0;}
+
+#program .program_list .program_con li {display: flex; align-items: end; border: 1px solid #000;  background: #fff; width: 100%;}
+#program .program_list .program_con li .program_con_img {width: 50%;}
+#program .program_list .program_con li img {width: 100%; display: block;}
+#program .program_list .program_con li .program_con_txt {width: 50%; padding: 0 0 3% 3%;}
+#program .program_list .program_con li .program_con_txt h3 {font-size: 4.8rem; font-family: var(--main-font); font-weight: 400; padding-bottom: 15px;}
+#program .program_list .program_con li .program_con_txt p {font-size: 2.4rem; line-height: 1.6;}
+
+#program .btn_more {text-align: center; padding: 120px 0 100px;}
+#program .btn_more a {font-family: var(--sub-font); font-size: 1.8rem; border: 1px solid #000; padding: 15px 45px; transition: all 0.6s; display: inline-block;}
+#program .btn_more a:hover {background: #83EBB8;}
+
+@media (max-width:1200px) {
+    #program .program_tit img {width: 4%;}
+    #program .program_tit h2 {font-size: 5.4rem;}
+    #program .program_tit p {font-size: 2.2rem; padding: 15px 0 120px 0;}
+    #program .program_list .program_tab {gap: 40px;}
+    #program .program_list .program_tab::before {width: 400px;}
+    #program .program_list .program_tab li {font-size: 1.8rem;}
+    #program .program_list .program_con li .program_con_txt h3 {font-size: 3.4rem;}
+    #program .program_list .program_con li .program_con_txt p {font-size: 2rem; }
+    #program .program_list .program_con li .program_con_txt {padding: 0 0 2% 2%;}
+ 
+}
+@media (max-width:768px) {
+    #program .program_tit img {width: 5%;}
+    #program .program_tit h2 {font-size: 4.5rem;}
+    #program .program_tit p {font-size: 2rem; padding: 15px 0 120px 0;}
+    #program .program_list .program_tab::before {left: 3%;}
+    #program .program_list .program_con li {flex-wrap: wrap;}
+    #program .program_list .program_con li .program_con_img {width: 100%;}
+    #program .program_list .program_con li .program_con_txt {width: 100%; padding: 5% 0 3% 3%;}
+    #program .program_list .program_con li .program_con_txt h3 {font-size: 3.5rem;}
+    #program .program_list .program_con li .program_con_txt p {font-size: 2rem;}
+}
+@media (max-width:500px) {
+    #program {padding: 80px 0 50px;}
+    #program .program_tit h2 {font-size: 2.8rem;}
+    #program .program_tit p {font-size: 1.6rem; padding: 15px 0 50px 0;}
+    #program .program_list .program_tab {padding-bottom: 30px;}
+    #program .program_list .program_tab::before {left: 4%; width: 365px;}
+    #program .program_list .program_tab li {font-size: 1.6rem;}
+    #program .program_list .program_con li {flex-wrap: wrap;}
+    #program .program_list .program_con li .program_con_img {width: 100%;}
+    #program .program_list .program_con li .program_con_txt {width: 100%; padding: 8% 5% 13% 5%;}
+    #program .program_list .program_con li .program_con_txt h3 {font-size: 3rem;}
+    #program .program_list .program_con li .program_con_txt p {font-size: 1.8rem;}
+    #program .program_list .program_con::before {left: 3%;}
+    #program .program_list .program_con li .program_con_txt br{display: inline-block; content: " "; padding: 0 0px;}
+    #program .btn_more {padding: 100px 0 50px;}
+    #program .btn_more a {font-size: 1.6rem; padding: 14px 40px;}
+}
+@media (max-width:400px) {
+    #program .program_list .program_tab::before {left: 4.3%; width: 260px;}
+    #program .program_list .program_tab {gap: 20px;}
+    #program .program_list .program_tab li {font-size: 1.4rem;}
+    #program .program_list .program_con li .program_con_txt p {font-size: 1.6rem;}
+
+}
