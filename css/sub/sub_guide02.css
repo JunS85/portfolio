@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#sub_guide02 {background: var(--main-color);}
+#sub_guide02 .sub_guide02_visual img {width: 100%; display: block;}
+#sub_guide02 .inner {text-align: center; padding-bottom: 150px;}
+#sub_guide02 .inner .sub_guide02_tit {padding: 50px 0 100px; text-align: center;}
+#sub_guide02 .sub_guide02_tit h2 {font-size: 6rem; color: var(--sub-color); padding-bottom: 20px;}
+#sub_guide02 .sub_guide02_tit p {color: rgba(255, 255, 255, 0.6);}
+#sub_guide02 dl {padding: 40px 0;}
+#sub_guide02 dl dt {font-size: 4rem; color: var(--sub-color); font-weight: 500; position: relative; display: inline-block;}
+#sub_guide02 dl dt::before {content: ""; width: 50px; height: 1px; background: var(--sub-color); position: absolute; left: -60px; top: 50%; transform: translateY(-50%);}
+#sub_guide02 dl dt::after {content: ""; width: 50px; height: 1px; background: var(--sub-color); position: absolute; right: -60px; top: 50%; transform: translateY(-50%);}
+#sub_guide02 dl dd {font-size: 2rem; color: #fff;}
+#sub_guide02 .sub_guide02_tit2 {padding-top: 100px;}
+#sub_guide02 .sub_guide02_tit2 h2 {font-size: 6rem; color: var(--sub-color); padding-bottom: 20px;}
+
+@media (max-width:1200px) {
+    #sub_guide02 .sub_guide02_tit h2 {font-size: 5rem;}
+    #sub_guide02 .sub_guide02_tit p {font-size: 5rem;}
+    #sub_guide02 dl {padding: 30px 0;} 
+    #sub_guide02 dl dt {font-size: 3rem;}
+    #sub_guide02 dl dd {font-size: 1.8rem;}
+}
+@media (max-width:768px) {
+    #sub_guide02 .inner {padding-bottom: 100px;}
+    #sub_guide02 .inner .sub_guide02_tit {padding: 30px 0 60px;}
+    #sub_guide02 .sub_guide02_tit p {font-size: 1.4rem;}
+    #sub_guide02 .sub_guide02_tit h2 {font-size: 4rem;}
+    #sub_guide02 dl dt {font-size: 3rem;}
+    #sub_guide02 dl dd {font-size: 1.6rem; padding-top: 10px;}
+    #sub_guide02 .sub_guide02_tit2 {padding-top: 60px;}
+    #sub_guide02 .sub_guide02_tit2 h2 {font-size: 4rem;padding-bottom: 10px;}
+}
+@media (max-width:500px) {
+    #sub_guide02 .inner {padding-bottom: 80px;}
+    #sub_guide02 .inner .sub_guide02_tit {padding: 30px 0 40px;}
+    #sub_guide02 .sub_guide02_tit h2 {font-size: 3rem;}
+    #sub_guide02 .sub_guide02_tit p {font-size: 1.2rem;}
+    #sub_guide02 dl dt {font-size: 2rem;}
+    #sub_guide02 dl dd {font-size: 1.4rem;}
+    #sub_guide02 .sub_guide02_tit2 {padding-top: 40px;}
+    #sub_guide02 .sub_guide02_tit2 h2 {font-size: 3rem;padding-bottom: 10px;}
+}
